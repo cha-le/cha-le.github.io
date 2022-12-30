@@ -10,6 +10,8 @@
 
     <!--Description-->
     
+        <meta name="description" content="I created this guide for people who also want to make their own page. I had a lot of struggles, so I want to share them with you and help you have an ">
+    
 
     <!--Author-->
     
@@ -17,6 +19,8 @@
     
 
     <!--Open Graph Title-->
+    
+        <meta property="og:title" content="How I built this website"/>
     
 
     <!--Open Graph Site Name-->
@@ -29,7 +33,7 @@
 
     <!-- Title -->
     
-    <title>Archives: 2022/12 - Charlie Lee</title>
+    <title>How I built this website - Charlie Lee</title>
 
     <!-- Custom CSS -->
     
@@ -114,33 +118,51 @@
                 <!-- Main Content -->
                 
 
-<section class="archives">
+    <h1>How I built this website</h1>
+
+
+
+<!-- Gallery -->
+
+
+<!-- Content -->
+<p>I created this guide for people who also want to make their own page. I had a lot of struggles, so I want to share them with you and help you have an easier time creating your site. </p>
+<p>Let’s get into it. First you want to download <a target="_blank" rel="noopener" href="https://git-scm.com/downloads">Git</a> and <a target="_blank" rel="noopener" href="https://nodejs.org/en/download/">nodejs</a>. Always try to download the most recent version. Then simply follow the onscreen instructions.</p>
+<p><img src="/home/images/git.PNG" alt="b"> <img src="/home/images/node.PNG" alt="a"></p>
+<p>Once it has finished downloading, you can check to see if you have truly have it. Press the windows button and type “cmd” in the searchbar. This is known as a terminal. You can have <strong>multiple</strong> of them. When the terminal has been booted up, type</p>
+<pre><code>node --version
+</code></pre>
+<p>to check if your computer has node. When you typed this, the terminal recognizes the first word and realizes that this command if associated with node. It then tells node about this command, and node checks if it has this “–version” command. It realizes that it does, and it should gives you something similar to the picture below.</p>
+<p><img src="/home/images/nodev.PNG" alt="aa"></p>
+<p>Type </p>
+<pre><code>git -v
+</code></pre>
+<p>to check the version. Once again, you are telling git through the terminal that you are using the “-v” command. Git senses that it is a valid command, and it gives you a response. If your computer has git then the output should be something similar to the picture below.</p>
+<p><img src="/home/images/gitv.PNG" alt="bb"></p>
+<p>Once you have done all of that, you are ready to download hexo. Do this by typing the following into the terminal:</p>
+<pre><code>npm install -g hexo-cli
+</code></pre>
+<p>There are some things to explain here. Remember node, what you just downloaded? npm means node package manager. That command is telling the node package manager who is responsible for packages to download hexo. </p>
+<p>Again, we want to make sure that we have hexo. Type the following to check Hexo’s version:</p>
+<pre><code>hexo v
+</code></pre>
+<p>This command isn’t different from the ones we typed above. Now we are asking Hexo for its version. The output should resemble a bunch of words and numbers like below:<br><img src="/home/images/hexov.PNG" alt="hexxo"></p>
+
+
+<!-- Tags -->
+
+
+
+<div class="tags">
     
-    <ul class="archive-list">
-        
-            <li>
-    <a href="/home/2022/12/25/a/">My Caribou results</a>
-</li>
+</div>
 
-        
-            <li>
-    <a href="/home/2022/12/26/me/">My youtube Channel</a>
-</li>
 
-        
-            <li>
-    <a href="/home/2022/12/29/test/">test</a>
-</li>
 
-        
-            <li>
-    <a href="/home/2022/12/30/page/">How I built this website</a>
-</li>
-
-        
-    </ul>
-</section><!-- end main -->
-
+<!-- Comments -->
+<div>
+    
+</div>
 
 
 
@@ -238,7 +260,7 @@
         var dsq = document.createElement('script');
         dsq.type = 'text/javascript';
         dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     }());
 </script>
