@@ -10,8 +10,6 @@
 
     <!--Description-->
     
-        <meta name="description" content="Here is the link to my Youtube Channel. I upload videos explaining Math problems on there.">
-    
 
     <!--Author-->
     
@@ -19,8 +17,6 @@
     
 
     <!--Open Graph Title-->
-    
-        <meta property="og:title" content="My youtube Channel"/>
     
 
     <!--Open Graph Site Name-->
@@ -33,7 +29,7 @@
 
     <!-- Title -->
     
-    <title>My youtube Channel - Charlie Lee</title>
+    <title>hexo - Charlie Lee</title>
 
     <!-- Custom CSS -->
     
@@ -108,6 +104,10 @@
                 <a href="/home/about.html">About</a>
             </li>
         
+            <li>
+                <a href="/home/categories">Categories</a>
+            </li>
+        
     </ul>
 </nav>
 
@@ -118,31 +118,25 @@
                 <!-- Main Content -->
                 
 
-    <h1>My youtube Channel</h1>
-
-
-
-<!-- Gallery -->
-
-
-<!-- Content -->
-<p>Here is the link to my <a href="www.youtube.com">Youtube Channel</a>. I upload videos explaining Math problems on there. </p>
-
-
-<!-- Tags -->
-
-
-
-<div class="tags">
+<section class="archives">
     
-</div>
-
-
-
-<!-- Comments -->
-<div>
+        <div class="archive-title">hexo</div>
     
-</div>
+    <ul class="archive-list">
+        
+            <li>
+    <a href="/home/2021/12/26/me/">My youtube Channel</a>
+</li>
+
+        
+            <li>
+    <a href="/home/2022/12/30/page/">How I built this website</a>
+</li>
+
+        
+    </ul>
+</section><!-- end main -->
+
 
 
 
@@ -240,7 +234,7 @@
         var dsq = document.createElement('script');
         dsq.type = 'text/javascript';
         dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     }());
 </script>
