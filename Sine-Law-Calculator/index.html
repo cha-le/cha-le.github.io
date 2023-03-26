@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Description-->
+    
+        <meta name="description" content="I was doing grade 10 trigonometry, specifically sine law when I had a thought: what if I coded a program to do this for me?
+
+The idea sounded wrong. I">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Charlie Lee">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Making a Sine Law Calculator"/>
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Charlie Lee"/>
+
+    <!--Page Cover-->
+    
+        <meta property="og:image" content=""/>
+    
+
+    <!-- Title -->
+    
+    <title>Making a Sine Law Calculator - Charlie Lee</title>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/sass/main.css">
+
+
+    <!--[if lt IE 8]>
+        
+<script src="/js/ie/html5shiv.js"></script>
+
+    <![endif]-->
+
+    <!--[if lt IE 8]>
+        
+<link rel="stylesheet" href="/sass/ie8.css">
+
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+        
+<link rel="stylesheet" href="/sass/ie9.css">
+
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Menu -->
+        <!-- Header -->
+<header id="header">
+    <div class="inner">
+
+        <!-- Logo -->
+        <a href="/" class="logo">
+            <span class="symbol"><img src="/images/logo.svg" alt="" /></span><span class="title">Charlie Lee</span>
+        </a>
+
+        <!-- Nav -->
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+    <h2>Menu</h2>
+    <ul>
+        
+            <li>
+                <a href="/">Home</a>
+            </li>
+        
+            <li>
+                <a href="/categories">Categories</a>
+            </li>
+        
+            <li>
+                <a href="/tags">Tags</a>
+            </li>
+        
+            <li>
+                <a href="/archives">Archives</a>
+            </li>
+        
+            <li>
+                <a href="/about/index">About</a>
+            </li>
+        
+    </ul>
+</nav>
+
+
+        <div id="main">
+            <div class="inner">
+
+                <!-- Main Content -->
+                
+
+    <h1>Making a Sine Law Calculator</h1>
+
+
+
+<!-- Gallery -->
+
+
+<!-- Content -->
+<p>I was doing grade 10 trigonometry, specifically sine law when I had a thought: what if I coded a program to do this for me?</p>
+<p><img src="/images/bigbrain.jpg" alt="bigbrain"></p>
+<p>The idea sounded wrong. I was supposed to do my own homework, not have an AI do it for me. This would be on the same level as using Chatgpt for an essay. However, the questions were incredibly repetitive. They didn’t require any memorization of the exact trig values, such as sin 30° or cos 45°. They simply need you to understand how to use a calculator and plug in the numbers. It felt like busywork to me. However, and this doesn’t apply only for trigonometry, but new math knowledge needs to be constantly practiced for it to actually set into the brain, for the person to understand it and use it well. So how could I prove that I know sine law like the back of my hand? As a coder, the answer came naturally: To make a program that can calculate sine law, no matter the input. However, I wanted to take it a step further. Ironically, finding out the answer wouldn’t be the solution to this. I wanted to write out the process, which should look somewhat like below:</p>
+<p>s &#x2F; sin S &#x3D; t &#x2F; sin T<br>18 &#x2F; sin (72°) &#x3D; 15 &#x2F; sin T<br>18 &#x2F; 0.95 * sin T &#x3D; 15<br>sin T &#x3D; 15 &#x2F; 18 * 0.95<br>sin T &#x3D; 0.791<br>∠T &#x3D; 52°</p>
+<p>This would hopefully be the output that the user receives, and the goal is to minimize the inputs that the user has to give for convenience. After all, the goal of continuing to make advancements in AI is to make our future easier, no?</p>
+<p>Such an amazing idea of a machine doing your homework is sadly not my idea. The book <a target="_blank" rel="noopener" href="https://www.amazon.ca/Homework-Machine-Dan-Gutman/dp/0689876793">“The Homework Machine”</a> has made a deep impression on me. The machine sounded so simple, yet deep down I knew it was sci-fi. It wasn’t as easy as it described, and I have actually always wanted to make something similar to this. So without any more delay, I’ll explain my entire thought process as I coded it.</p>
+<p>I decided to use Scratch for the convenience of having pre-made images as well as an easy way to upload it onto the web so I can access it any time. The purpose of this project was to do calculations, not for users to appreciate the amazing graphics. With that in mind, I chose a simple dino from scratch’s library of sprites and made it change costumes everytime it asks a question. This dinosaur is going to continue to pester people with questions until it has enough information. Now, the first thing that I do when starting a calculation project is to consider how many variables I am going to be using. The law of sines can be used to compute the remaining sides of a triangle when two angles and a side are known or to calculate the corresponding side of one of the known angles when two sides and a side corresponding to the other angle is known. The formula is shown as below:</p>
+<p><img src="/images/trig.png" alt="sinelaw"></p>
+<p>Using this, it can be known that we need at least four variables: side a, side b, angle A and angle B. Now, there is something that needs to be explained before continuing. The sine law is used when two sides and an angle are known to calculate the other angle, or when two angles and a side is known to calculate the other side. This would be two scenarios, in which I decided to take on. I then first made sure which side and angle has to be known in both situations for the calculator to actually work. In other words, we have to know either two angles and a side or two sides and an angle. And so, this gives us these variables so far:</p>
+<ul>
+<li>Known side 1</li>
+<li>Known side 2</li>
+<li>Known angle 1</li>
+<li>Known angle 2</li>
+<li>Unknown side 2</li>
+<li>Unknown angle 2</li>
+</ul>
+<p>For anyone confused as for why there is a known side 2 as well as an unknow side 2, remember that we are coding the AI to deal with two scenarios, so the second side can be known or unknown. However, if we go back to the process that we want to output, the problem emerges: we also need names. We can’t just do calculations, otherwise where are the angle names and sides going to come from? So, with this in mind, the variable list doubles:</p>
+<ul>
+<li>Known side 1</li>
+<li>Known side 1 name</li>
+<li>Known side 2</li>
+<li>Known side 2 name</li>
+<li>Known angle 1</li>
+<li>Known angle 1 name</li>
+<li>Known angle 2</li>
+<li>Known angle 2 name</li>
+<li>Unknown side 2</li>
+<li>Unknown side 2 name</li>
+<li>Unknown angle 2</li>
+<li>Unknown angle 2 name</li>
+</ul>
+<p>This is where I realized the incredible amount of variables that I was dealing with. The dinosaur was going to ask an incredible amount of questions, and I had to think of a way to reduce that. I took a closer look at the formula and that’s when I found out. You see, angle A in the formula corresponds to side lowercase a, and so, I decided to make a function to convert the inputed values to lowercase and to uppercase. The process had me creating the variable “i”, the variable “lowercase alphabet” and “uppercase alphabet”. After this was done, the AI can now ask less questions. Before, the dinosaur had to ask these questions: </p>
+<ul>
+<li>Known side 1 value?</li>
+<li>Known side 1 name?</li>
+<li>Known side 2 value?</li>
+<li>Known side 2 name?</li>
+<li>Known angle 1 value?</li>
+<li>Known angle 1 name?</li>
+<li>Known angle 2 value?</li>
+<li>Known angle 2 name?</li>
+<li>Unknown side 2 name?</li>
+<li>Unknown angle 2 name?</li>
+</ul>
+<p>Now, for the addition of three variable, we only have to ask 8 questions instead of the original 10.</p>
+<ul>
+<li>Known side 1 value?</li>
+<li>Known side 1 name?</li>
+<li>Known side 2 value?</li>
+<li>Known side 2 name?</li>
+<li>Known angle 1 value?</li>
+<li>Known angle 1 name?</li>
+<li>Known angle 2 value?</li>
+<li>Known angle 2 name?</li>
+</ul>
+<p>Of course, we still have to add one more question, which is “How many known sides?” This question is an important one, because it is essentially asking the user “Are you trying to solve for an angle or a side”, and if the answer is one, then it should fit under scenario 1 and if the answer is two it would fit under scenario 2.</p>
+<p>To make this happen I then used an </p>
+<pre><code>if &lt; &gt; then 
+else 
+</code></pre>
+<p>to allow the AI to take on the two scenarios. In the boolean, I entered the following:</p>
+<pre><code>Known sides = 1
+</code></pre>
+<p>This is terrible grammar, but the variable “known sides” is the one collected from the answer, so it has to be that. This is where I felt like I created a useless variable. Instead of creating this variable, I completely could’ve just used the answer in the boolean like this:</p>
+<pre><code>if &lt; Answer = 1&gt; then:
+    Scenario 1
+Else:
+    Scenario 2
+</code></pre>
+<p>Yet instead the actual code looks like this:</p>
+<pre><code>if &lt; Known sides = 1&gt; then:
+    Scenario 1
+Else:
+    Scenario 2
+</code></pre>
+<p>The benefit of this is that when people edit it, they would understand it easier. The downside is that I was inefficient with my code, so this is a learning moment for me here. </p>
+<p>And at last, after all the required variables have been determined, it is time to do the calculation. I first created a list named “Answers”, which is perfect because list #1 of the answer would be step 1, list #2 would be step 2 and so on. The calculation code itself looks like this, and it certainly isn’t pretty:</p>
+<p><img src="/images/code.PNG" alt="bigcode"></p>
+<p>For the sake of time and for those that are just not interested in these intimidating-looking blocks of code, I won’t go in-depth to explain it. A grossly simplified explanation of the code is that I abused the </p>
+<pre><code>join ()()
+</code></pre>
+<p>block for the final result. Now just what is the final result and how do we get to that? As I have previously said, I tried my very best to make this beginner-friendly, but some prerequisite knowledge of triangles are needed. </p>
+<p>The link to the calculator is below: <a target="_blank" rel="noopener" href="https://scratch.mit.edu/projects/565410737/">https://scratch.mit.edu/projects/565410737/</a>, and upon clicking the green flag, the dinosaur will ask you the question “How many known sides?” I will be using problem A from question 1 from <a target="_blank" rel="noopener" href="http://www.alamandamaths.com/wp-content/uploads/2018/05/SIN-Law.pdf">http://www.alamandamaths.com/wp-content/uploads/2018/05/SIN-Law.pdf</a> to demonstrate. If you want to calculate a side, input “1”, otherwise input “2”. For this question I will type 2, because two sides are known, side a and side b. The next question is very self-explanatory: “First known angle value?” asks for the first angle. If you are doing the same as me, just input the only angle that you know. I’ll input 42, and now the AI wants to know the first side value. Now, it is very important that you input the <em><strong>CORRESPONDING</strong></em> side. For me, since the angle I gave was angle B, I <em><strong>MUST</strong></em> input side b for this question. After that, give the AI the second side that you know, which for me is 22. Now it will start asking for names, and the first known angle name in my case is B. <strong>When giving names, it is very important to keep in mind that although Scratch booleans agree that B &#x3D; b, which in other words mean that despite the fact that Scratch itself isn’t case sensitive, this calculator is still case sensitive.</strong> I inputted B, and now the first known side name <em><strong>ALSO NEEDS TO BE THE CORRESPONDING SIDE OF THE ANGLE YOU HAVE GIVEN.</strong></em> In my case, it is b. The second known side name is lowercase a, and after that, voila! The answer is there for you to copy paste. </p>
+<p><img src="/images/exercise.PNG" alt="problem"></p>
+<p>The answer that the calculator gave is the following:</p>
+<p><img src="/images/answer.PNG" alt="answer"><br>Which matches with the answer of the website<br><img src="/images/answer2.PNG" alt="answer2"></p>
+<p>I will also briefly cover what happens if you inputted “1” to the first question. The dino will ask you the first known angle value, which <strong>you need to give the angle that corresponds to the known side.</strong> The next two questions are simple quesitons. When it starts asking for names, just keep in mind that this calculator is case sensitive, and you should be good to go!</p>
+
+
+<!-- Tags -->
+
+
+
+<div class="tags">
+    <a href="/tags/Math/" class="button small">Math</a> <a href="/tags/Trigonometry/" class="button small">Trigonometry</a>
+</div>
+
+
+
+<!-- Comments -->
+<div>
+    
+    <hr />
+    <h3>Comments:</h3>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+
+
+</div>
+
+
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+<footer id="footer">
+    <div class="inner">
+        <section>
+            <h2>About</h2>
+            <div>
+                This website was created by Charlie.
+            </div>
+        </section>
+        <section>
+            <h2>Follow</h2>
+            <ul class="icons">
+                
+                
+                
+                
+                
+                    <li><a href="https://github.com/cha-le" class="icon style2 fa-github" target="_blank" ><span class="label">GitHub</span></a></li>
+                
+                
+                
+                
+                
+                
+            </ul>
+        </section>
+        <ul class="copyright">
+            <li>&copy; All rights reserved</li>
+        </ul>
+    </div>
+</footer>
+    </div>
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+
+<script src="/js/jquery.min.js"></script>
+
+
+<!-- skel -->
+
+<script src="/js/skel.min.js"></script>
+
+
+<!-- Custom Code -->
+
+<script src="/js/util.js"></script>
+
+
+<!--[if lte IE 8]>
+
+<script src="/js/ie/respond.min.js"></script>
+
+<![endif]-->
+
+<!-- Custom Code -->
+
+<script src="/js/main.js"></script>
+
+
+<!-- Gallery -->
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+<script type="text/javascript">
+    var disqus_shortname = 'Charlie';
+
+    (function(){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+</body>
+
+</html>

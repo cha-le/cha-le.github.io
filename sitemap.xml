@@ -2,16 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://cha-le.github.io/about/index.html</loc>
+    <loc>https://chale.ca/Sine-Law-Calculator/</loc>
     
-    <lastmod>2023-02-04</lastmod>
+    <lastmod>2023-03-26</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://cha-le.github.io/2021/12/26/me/</loc>
+    <loc>https://chale.ca/Caribou/</loc>
+    
+    <lastmod>2023-03-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://chale.ca/website/</loc>
+    
+    <lastmod>2023-03-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://chale.ca/Your-Own-Website/</loc>
+    
+    <lastmod>2023-03-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://chale.ca/about/index.html</loc>
+    
+    <lastmod>2023-02-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://chale.ca/Youtube/</loc>
     
     <lastmod>2023-01-07</lastmod>
     
@@ -20,25 +56,7 @@
   </url>
   
   <url>
-    <loc>https://cha-le.github.io/2022/12/30/page/</loc>
-    
-    <lastmod>2023-01-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://cha-le.github.io/2022/12/25/a/</loc>
-    
-    <lastmod>2023-01-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://cha-le.github.io/categories/index.html</loc>
+    <loc>https://chale.ca/categories/index.html</loc>
     
     <lastmod>2023-01-05</lastmod>
     
@@ -47,7 +65,7 @@
   </url>
   
   <url>
-    <loc>https://cha-le.github.io/tags/index.html</loc>
+    <loc>https://chale.ca/tags/index.html</loc>
     
     <lastmod>2023-01-05</lastmod>
     
@@ -57,30 +75,72 @@
   
 
   <url>
-    <loc>https://cha-le.github.io/</loc>
-    <lastmod>2023-02-04</lastmod>
+    <loc>https://chale.ca/</loc>
+    <lastmod>2023-03-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://cha-le.github.io/tags/score/</loc>
-    <lastmod>2023-02-04</lastmod>
+    <loc>https://chale.ca/tags/me/</loc>
+    <lastmod>2023-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://cha-le.github.io/tags/me/</loc>
-    <lastmod>2023-02-04</lastmod>
+    <loc>https://chale.ca/tags/hexo/</loc>
+    <lastmod>2023-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://cha-le.github.io/tags/hexo/</loc>
-    <lastmod>2023-02-04</lastmod>
+    <loc>https://chale.ca/tags/website/</loc>
+    <lastmod>2023-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://chale.ca/tags/create/</loc>
+    <lastmod>2023-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://chale.ca/tags/Math/</loc>
+    <lastmod>2023-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://chale.ca/tags/Trigonometry/</loc>
+    <lastmod>2023-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://chale.ca/tags/Score/</loc>
+    <lastmod>2023-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://chale.ca/tags/Contest/</loc>
+    <lastmod>2023-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://chale.ca/tags/Caribou/</loc>
+    <lastmod>2023-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -88,15 +148,43 @@
 
   
   <url>
-    <loc>https://cha-le.github.io/categories/school/</loc>
-    <lastmod>2023-02-04</lastmod>
+    <loc>https://chale.ca/categories/web/</loc>
+    <lastmod>2023-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://cha-le.github.io/categories/web/</loc>
-    <lastmod>2023-02-04</lastmod>
+    <loc>https://chale.ca/categories/hexo/</loc>
+    <lastmod>2023-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://chale.ca/categories/hexo/coding/</loc>
+    <lastmod>2023-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://chale.ca/categories/School/</loc>
+    <lastmod>2023-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://chale.ca/categories/School/Math/</loc>
+    <lastmod>2023-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://chale.ca/categories/School/Math/Contest/</loc>
+    <lastmod>2023-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
