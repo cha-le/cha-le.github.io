@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://chale.ca/test/</loc>
+    
+    <lastmod>2023-04-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://chale.ca/yyny/</loc>
     
     <lastmod>2023-04-02</lastmod>
@@ -186,6 +195,20 @@
   
   <url>
     <loc>https://chale.ca/tags/omg/</loc>
+    <lastmod>2023-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://chale.ca/tags/123/</loc>
+    <lastmod>2023-04-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://chale.ca/tags/456/</loc>
     <lastmod>2023-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
