@@ -2,9 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://chale.ca/Banff/</loc>
+    
+    <lastmod>2023-09-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://chale.ca/Caribou/</loc>
+    
+    <lastmod>2023-09-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://chale.ca/Ottawa/</loc>
     
-    <lastmod>2023-07-07</lastmod>
+    <lastmod>2023-09-12</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -50,15 +68,6 @@
     <loc>https://chale.ca/US-History-1.2/</loc>
     
     <lastmod>2023-04-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://chale.ca/Caribou/</loc>
-    
-    <lastmod>2023-04-01</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -121,7 +130,7 @@
 
   <url>
     <loc>https://chale.ca/</loc>
-    <lastmod>2023-07-07</lastmod>
+    <lastmod>2023-09-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -129,84 +138,98 @@
   
   <url>
     <loc>https://chale.ca/tags/me/</loc>
-    <lastmod>2023-07-07</lastmod>
+    <lastmod>2023-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://chale.ca/tags/hexo/</loc>
-    <lastmod>2023-07-07</lastmod>
+    <lastmod>2023-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://chale.ca/tags/website/</loc>
-    <lastmod>2023-07-07</lastmod>
+    <lastmod>2023-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://chale.ca/tags/create/</loc>
-    <lastmod>2023-07-07</lastmod>
+    <lastmod>2023-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://chale.ca/tags/Math/</loc>
-    <lastmod>2023-07-07</lastmod>
+    <lastmod>2023-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://chale.ca/tags/Trigonometry/</loc>
-    <lastmod>2023-07-07</lastmod>
+    <lastmod>2023-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://chale.ca/tags/Score/</loc>
-    <lastmod>2023-07-07</lastmod>
+    <lastmod>2023-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://chale.ca/tags/Caribou/</loc>
-    <lastmod>2023-07-07</lastmod>
+    <lastmod>2023-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://chale.ca/tags/AP/</loc>
-    <lastmod>2023-07-07</lastmod>
+    <lastmod>2023-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://chale.ca/tags/US-History/</loc>
-    <lastmod>2023-07-07</lastmod>
+    <lastmod>2023-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://chale.ca/tags/John-Wick/</loc>
-    <lastmod>2023-07-07</lastmod>
+    <lastmod>2023-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://chale.ca/tags/Otttawa/</loc>
-    <lastmod>2023-07-07</lastmod>
+    <lastmod>2023-09-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://chale.ca/tags/Trip/</loc>
+    <lastmod>2023-09-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://chale.ca/tags/Banff/</loc>
+    <lastmod>2023-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -215,70 +238,70 @@
   
   <url>
     <loc>https://chale.ca/categories/school/</loc>
-    <lastmod>2023-07-07</lastmod>
+    <lastmod>2023-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://chale.ca/categories/web/</loc>
-    <lastmod>2023-07-07</lastmod>
+    <lastmod>2023-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://chale.ca/categories/hexo/</loc>
-    <lastmod>2023-07-07</lastmod>
+    <lastmod>2023-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://chale.ca/categories/hexo/coding/</loc>
-    <lastmod>2023-07-07</lastmod>
+    <lastmod>2023-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://chale.ca/categories/School/</loc>
-    <lastmod>2023-07-07</lastmod>
+    <lastmod>2023-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://chale.ca/categories/School/Math/</loc>
-    <lastmod>2023-07-07</lastmod>
+    <lastmod>2023-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://chale.ca/categories/School/Math/Contest/</loc>
-    <lastmod>2023-07-07</lastmod>
+    <lastmod>2023-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://chale.ca/categories/school/History/</loc>
-    <lastmod>2023-07-07</lastmod>
+    <lastmod>2023-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://chale.ca/categories/Summaries/</loc>
-    <lastmod>2023-07-07</lastmod>
+    <lastmod>2023-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://chale.ca/categories/Summaries/Movies/</loc>
-    <lastmod>2023-07-07</lastmod>
+    <lastmod>2023-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
